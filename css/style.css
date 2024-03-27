@@ -93,7 +93,7 @@ img.logo {
 
 .navigation-elements {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navigation-elements li {
@@ -115,7 +115,7 @@ img.logo {
 }
 
 .nav-cart {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .cart-icon {
@@ -150,7 +150,7 @@ img.logo {
 
 .hero-title {
   color: #fff;
-  font-size: 96px;
+  font-size: 80px;
 }
 
 .hero-buttons {
@@ -559,7 +559,7 @@ textarea.form-input {
 /* Responsive */
 @media screen and (max-width: 1365px) {
   .hero-title {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .product-grid .product-card {
@@ -609,8 +609,12 @@ textarea.form-input {
     margin-right: 30px;
   }
 
+  .hero {
+    height: 400px;
+  }
+
   .hero-title {
-    font-size: 65px;
+    font-size: 50px;
   }
 
   .main-btn {
@@ -687,8 +691,12 @@ textarea.form-input {
     margin-right: 20px;
   }
 
+  .hero {
+    height: 300px;
+  }
+
   .hero-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .main-btn {
