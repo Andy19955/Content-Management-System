@@ -1,7 +1,14 @@
-import { url } from "../constants.js";
+import { url, wooClientKey, wooClientSecret } from "../constants.js";
+import { basicAuth } from "../helpers/basicAuth.js";
 
 export async function fetchProducts() {
-  const response = await fetch(url);
+  const auth = basicAuth(wooClientKey, wooClientSecret);
+
+  const response = await fetch(url, {
+    headers: {
+      Authorization: auth,
+    },
+  });
 
   if (response.ok) {
     const results = await response.json();

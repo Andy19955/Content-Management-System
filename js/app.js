@@ -14,10 +14,10 @@ function router() {
       handleNewProductsDisplay();
       break;
     case "/women/":
-      handleProductsDisplay("female");
+      handleProductsDisplay("women");
       break;
     case "/men/":
-      handleProductsDisplay("male");
+      handleProductsDisplay("men");
       break;
     case "/product/":
       handleSingleProductDisplay();

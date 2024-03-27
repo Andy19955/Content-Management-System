@@ -6,14 +6,14 @@ export function createProduct(product) {
   productImgContainer.classList.add("product-img");
 
   const productImg = document.createElement("img");
-  productImg.setAttribute("src", product.image);
-  productImg.setAttribute("alt", product.title);
+  productImg.setAttribute("src", product.images[0].src);
+  productImg.setAttribute("alt", product.name);
 
   productImgContainer.append(productImg);
 
   const productName = document.createElement("span");
   productName.classList.add("product-name");
-  productName.innerText = product.title;
+  productName.innerText = product.name;
 
   const productPrice = document.createElement("span");
   productPrice.classList.add("product-price");
@@ -26,6 +26,5 @@ export function createProduct(product) {
   productCard.append(productName);
   productCard.append(productPrice);
   link.append(productCard);
-
   return link;
 }

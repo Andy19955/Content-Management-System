@@ -11,9 +11,9 @@ export function displaySingleProduct(product) {
   const productSizeSelector = document.querySelector("#product-size-selector");
   const addToCartButton = document.querySelector("#add-to-cart");
 
-  document.title = `${product.title} - RainyDays`;
+  document.title = `${product.name} - RainyDays`;
 
-  if (product.gender.toLowerCase() === "female") {
+  if (product.categories[0].name.toLowerCase() === "women") {
     const activeMenu = document.querySelector("#menu-women");
     activeMenu.classList.add("active");
     genderBreadcrumb.innerText = "Women";
@@ -25,14 +25,14 @@ export function displaySingleProduct(product) {
     genderBreadcrumb.setAttribute("href", "../men/");
   }
 
-  productImage.setAttribute("src", product.image);
-  productImage.setAttribute("alt", product.title);
-  productBreadcrumb.innerText = product.title;
-  productTitle.innerText = product.title;
+  productImage.setAttribute("src", product.images[0].src);
+  productImage.setAttribute("alt", product.images[0].alt);
+  productBreadcrumb.innerText = product.name;
+  productTitle.innerText = product.name;
   productPrice.innerText = "$" + product.price;
-  productDescription.innerText = product.description;
+  productDescription.innerHTML = product.description;
 
-  product.sizes.forEach(createSizeBox);
+  product.attributes[0].options.forEach(createSizeBox);
 
   function createSizeBox(size) {
     const sizeOption = document.createElement("option");
@@ -42,9 +42,9 @@ export function displaySingleProduct(product) {
   }
 
   addToCartButton.dataset.id = product.id;
-  addToCartButton.dataset.title = product.title;
+  addToCartButton.dataset.title = product.name;
   addToCartButton.dataset.price = product.price;
-  addToCartButton.dataset.image = product.image;
+  addToCartButton.dataset.image = product.images[0].src;
 
   addToCartButton.addEventListener("click", addToCart);
 
