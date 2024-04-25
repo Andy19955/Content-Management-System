@@ -6,9 +6,9 @@ import { handleCheckout } from "./handlers/handleCheckout.js";
 import { renderItemCount } from "./ui/cart/renderItemCount.js";
 
 function router() {
-  const path = window.location.pathname;
+  const { pathname } = location;
 
-  switch (path) {
+  switch (pathname) {
     case "/":
     case "/index.html":
       handleNewProductsDisplay();
