@@ -43,5 +43,3 @@ npm run start
 ## Contact
 
 [LinkedIn (https://www.linkedin.com/in/andreas-thune/)](https://www.linkedin.com/in/andreas-thune/)
-
-[Mail (kontakt@andreasthune.no)](mailto:kontakt@andreasthune.no)
