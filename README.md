@@ -1,6 +1,6 @@
 # Content-Management-System
 
-![image](https://github.com/Andy19955/Content-Management-System/blob/master/rainydays.jpg)
+![image](https://github.com/Andy19955/Content-Management-System/blob/master/images/rainydays.jpg)
 
 ## Description
 
