@@ -40,6 +40,10 @@ To run the app, run the following commands:
 npm run start
 ```
 
+## Contributing
+
+If contributing, make sure to open a pull request so code can be reviewed.
+
 ## Contact
 
 [LinkedIn (https://www.linkedin.com/in/andreas-thune/)](https://www.linkedin.com/in/andreas-thune/)
